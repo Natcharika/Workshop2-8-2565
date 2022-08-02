@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+</head> 
+<body>
+    <form action="form-echo.php" method="get">
+        1.เป็นสระในภาษาอังกฤษเท่านั้นและมีได้3ตัว :
+        <input
+            type="text"
+            name="username"
+            placeholder="username"
+            pattern="[a,e,i,o,u]{3}">
+            <p><input type="submit" value="Submit">
+    </form>
+    <form action="form-echo.php" method="get">
+        2.ขึ้นต้นตัวพิมพ์ใหญ่ตัวแรก ที่เหลือเป็นอักษรพิมพ์เล็กตั้งแต่1ตัวขึ้นไป :
+        <input
+            type="text"
+            name="username"
+            placeholder="username"
+            pattern="[A][a-z]+">
+            <p><input type="submit" value="Submit">
+    </form>
+    <form action="form-echo.php" method="get">
+        3.ขึ้นต้นด้วย ord หรือ order ลงท้ายด้วยตัวเลข 5 ตัว :
+        <input
+            type="text"
+            name="username"
+            placeholder="username"
+            pattern="(ord|order)\d{5}">
+            <p><input type="submit" value="Submit">
+    </form>
+    <form action="form-echo.php" method="get">
+        4.เป็นคำว่า frog หรือ blog หรือ clog เท่านั้น :
+        <input
+            type="text"
+            name="username"
+            placeholder="username"
+            pattern="(fr|bl|cl)og">
+            <p><input type="submit" value="Submit">
+    </form>
+</body>
+</html>
